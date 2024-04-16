@@ -47,28 +47,3 @@ class TestController {
 
 }
 module.exports = new TestController()
-
-// async getUsers(req, res) {
-//     try {
-//         // if (!req.user) return res.json({error: "Аутентификация не пройдена"})
-//         const {userId, limit, isForEnd} = req.query
-//         if (!userId)  {
-//             return res.json(test.users().slice(0, Number(limit)))
-//         }
-//         // console.log(tt.users()es)
-//         let array
-//         let index = getUserById(userId)
-//         console.log(isForEnd)
-//         if (isForEnd === "true")
-//             array = test.users().slice(index+1, (index+1)+Number(limit))
-//         else
-//         {
-//             if (index !== 0)
-//             {
-//                 array = test.users().slice(Number(limit) < index? index - Number(limit) : 0 ,index)
-//             }
-//             else return res.json([])
-//
-//         }
-//         return res.json(array)
-//     }
